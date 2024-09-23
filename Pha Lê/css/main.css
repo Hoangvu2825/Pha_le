@@ -1,0 +1,167 @@
+.box {
+    display: flex;
+    align-items: center;
+    height: 92px;
+    background-color: black; 
+    position: fixed; /* Khóa navbar ở đầu */
+    top: 0; /* Cố định ở vị trí trên cùng của trang */
+    left: 0;
+    width: 100%; /* Để thanh navbar chiếm hết chiều rộng màn hình */
+    z-index: 1000; /* Đảm bảo navbar nổi lên trên các phần tử khác */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+.logo img{
+    width: 80px;
+    height: 55px;
+}
+.cangiua_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.nd_nav {
+    display: flex;
+    justify-content: center;  
+}
+.nd_nav p{
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.nd_nav img{
+    margin: 0 10px;
+}
+.nd_nav a{
+    text-decoration: none;
+}
+.icons {
+    flex:1; 
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    margin-left: 10px;
+}
+/* carousel */
+.carousel{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-show{
+    width: 100%; 
+    overflow: hidden;
+}
+.list-images{
+    width: 100%;
+    height: 600px; 
+   
+}
+/*hết*/
+/* NHỮNG ĐIỀU KHÁC BIỆT */
+.text_of_topic{
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.text_of_topic p{
+    text-align: center;
+    margin-top: 50px;
+}
+.imgofdiff{
+    height: 500px;
+    width: 400px;
+}
+.nd_diff .row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin: 20px;
+}
+.row .imgmain{
+    padding: 30px;
+}
+.row .nd1 .topic1{
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+.row .nd2 .topic2{
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 22px;
+}
+.ndchinh1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.ndchinh2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/* SẢN PHẨM NỔI BẬT */
+.spnb_layout{
+    margin-top: 50px;
+}
+.row_spnb{
+    display:grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.row_spnb .spnb{
+    width: 380px;
+    height: 500px;
+    padding: 35px;
+    
+}
+.row_spnb .spnb:hover{
+    border-radius: 26px;
+    border: 2px solid lightgray;
+}
+.row_spnb .spnb a img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 26px;
+}
+.row_spnb .spnb img{
+    width: 310px;
+    height: 260px;
+}
+.row_spnb .spnb a {
+    text-decoration: none;
+}
+.row_spnb .spnb .namespnb{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    max-width: 340px;
+}
+.row_spnb .spnb .price{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #CA8D72;
+    font-weight: bold;
+}
+.row_spnb .spnb .infospnb{
+    padding: 15px 40px;    
+    border-radius: 26px;
+    background-color: #DDC3AF;
+    color: white;
+}
