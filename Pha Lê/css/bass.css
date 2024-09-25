@@ -1,3 +1,11 @@
+:root {
+    --text-color: #333;
+    --dark-green: #A9BA69;
+    --money-color: #CA8D72;
+    --button-color: #DDC3AF;
+    --white-color:#ffff;
+    --black-color:#0000;
+}
 *{
     box-sizing: inherit;
 }
