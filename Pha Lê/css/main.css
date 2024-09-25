@@ -1,5 +1,5 @@
 .big {
-    height: 5000px;
+    height: 6000px;
     margin: 0;
 }
 
@@ -335,15 +335,18 @@
 
     .row_ttspnb {
         display: grid;
-        grid-template-columns: 25% 25% 25%;
+        grid-template-columns: 30% 30% 30%;
         justify-content: space-evenly;
         margin-top: 50px;
+        
     }
     
     .row_ttspnb .ttspnb {
-        width: 380px;
-        height: 500px;
-        padding: 35px;
+        width: 410px;
+        height: 600px;
+        padding: 40px; 
+        box-shadow: 4px 4px 10px gray;
+        
     }
 
     .row_ttspnb .ttspnb a img {
@@ -364,11 +367,96 @@
     }
     
     .row_ttspnb .ttspnb .ttspnbimg {
-        width: 410px;
-        height: 360px;
+        width: 330px;
+        height: 310px;
         overflow: hidden;
         border-radius: 5px;
     }
-
-
+    .ttspnb a{
+        text-decoration: none;
+    }
+    .nut_tt{
+        margin-top: 20px;
+    }
+    .nut_tt a{
+        padding: 6px 20px;
+        background-color: #80ACBF;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 12px;
+    }
+    .namettspnb {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: black;
+        line-height: 20px;
+    }
+    .content_of_spttnb {
+        font-weight: bold;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3F3F3F;
+        width: 350px;
+        line-height: 18px;
+    }
+   .infottspnb {
+        padding: 7px 25px;
+        background-color: #BC997C;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 12px;
+   }
+   /* CHI NHÁNH CỬA HÀNG */
+   .layout_address{
+    display: grid;
+    width: 1250px;
+    height: 480px;
+    grid-template-columns: 40% 60%;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    box-shadow: 4px 4px 10px gray;
+   }
+   .layout_address .img_address {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .layout_address .img_address img {
+    width: 400px;
+    height: 430px;
+    display: block;
+  }
+  
+  .layout_address .img_address::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 30%; /* Giảm chiều rộng của bóng trắng */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: 1s;
+  }
+  
+  .layout_address .img_address:hover::before {
+    left: 150%;
+    transition: 1s;
+  }
+  .topic_address{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+  }
+  .address_content .content{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #747474;
+  }
 /* hết */
