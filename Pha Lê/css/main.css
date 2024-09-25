@@ -459,4 +459,92 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #747474;
   }
+  .another_address{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  .another_address .imganother img{
+    width: 400px;
+    height: 400px;
+  }
+  .footer_layout{
+    background-color: black;
+    height: 500px;
+    margin-top: 50px;
+    padding: 50px;
+    }
+    .footer_row{
+        display: grid;
+        grid-template-columns: 20% 20% 30% 20%;
+        justify-content: space-evenly;
+    }
+    .footer_row p{
+        color: white;
+    }
+    .footer_content1{
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    .footer_content1 .topic_content1 p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .footer_content1 .content1 a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        
+    }
+    .footer_content2{
+        line-height: 20px;
+    }
+    .footer_content2 .topic_content2 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .footer_content2 .content2 {
+        width: 350px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .footer_content3{
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    .footer_content3 .topic_content3 p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .footer_content3 .content3 {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .footer_content3 .content3 .searchemail{
+        height: 50px;
+        width: 250px;
+        border-radius: 26px;
+        border: 2px solid black ;
+    }
+    .footer_content3 .content3 input::placeholder{
+        color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+        font-style: italic; /* Đặt kiểu chữ in nghiêng (tuỳ chọn) */
+    }
+    .footer_content3 .content3 input:hover{
+        background-color: white;
+    }
+   .footer_layout hr{
+        margin-top: 30px;
+   }
+   .nsxPL p{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
 /* hết */
