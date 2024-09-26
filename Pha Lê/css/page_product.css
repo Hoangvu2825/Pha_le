@@ -12,25 +12,25 @@
 
 /* Menu bên trái */
 .product_menu {
-    width: 350px; /* Chiều rộng cột menu */
-    height: 100vh; /* Chiều cao toàn màn hình */
+    width: 400px; /* Chiều rộng cột menu */
+    height: 760px;  /*Chiều cao toàn màn hình */
     position: fixed; /* Cố định menu khi cuộn */
-    
+     /* Đảm bảo menu nằm trên các phần tử khác */
     padding: 20px;
-    
+    top: 10;
+    margin-bottom: -1000000px;
 }
 
 /* Nội dung bên phải */
 .product_content {
     margin-left: 350px; /* Chừa khoảng trống cho menu */
     padding: 20px;
-    width: calc(100% - 350px); /* Điều chỉnh chiều rộng của content */
-    
+    width: calc(400% - 350px); /* Điều chỉnh chiều rộng của content */
 }
 
 /* Styling cho sản phẩm (đơn giản) */
 .product_content {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 .danhsach{
     display: flex;
@@ -72,10 +72,9 @@
     width: 100%; /* Khi hover, border mở rộng toàn bộ chiều rộng chữ */
 }
 
-
 .stick {
     width: 1px;
-    height: 5000px;
+    height: 800px;
     background-color: brown;
     margin: 10px 0 0 40px;
 }
@@ -170,3 +169,92 @@
 }
 
     
+
+/* FOOTER */
+.footer{
+    position: relative;
+}
+.footer_layout{
+    background-color: black;
+    height: 500px;
+    margin-top: 50px;
+    padding: 50px;
+    position: absolute;
+    bottom: -1;
+    right: 0;
+    left: 0;
+    }
+    .footer_row{
+        display: grid;
+        grid-template-columns: 20% 20% 30% 20%;
+        justify-content: space-evenly;
+    }
+    .footer_row p{
+        color: white;
+    }
+    .footer_content1{
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    .footer_content1 .topic_content1 p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .footer_content1 .content1 a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        
+    }
+    .footer_content2{
+        line-height: 20px;
+    }
+    .footer_content2 .topic_content2 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .footer_content2 .content2 {
+        width: 350px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .footer_content3{
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    .footer_content3 .topic_content3 p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .footer_content3 .content3 {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .footer_content3 .content3 .searchemail{
+        height: 50px;
+        width: 250px;
+        border-radius: 26px;
+        border: 2px solid black ;
+    }
+    .footer_content3 .content3 input::placeholder{
+        color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+        font-style: italic; /* Đặt kiểu chữ in nghiêng (tuỳ chọn) */
+    }
+    .footer_content3 .content3 input:hover{
+        background-color: white;
+    }
+   .footer_layout hr{
+        margin-top: 30px;
+   }
+   .nsxPL p{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+/* hết */
