@@ -1,0 +1,216 @@
+.page{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:90px ;
+}.page .nau{
+    color: #BE7352;
+}
+/* TINTUC ROW 1 */
+/* Phần hình ảnh */
+.tintuc_row{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+}
+.tintuc_col1  img{
+    width: 385px;
+    height: 220px;
+}
+.img_tintuc1{
+    width: 385px;
+    height: 220px;
+    overflow: hidden; 
+    
+}
+.img_tintuc1 img{
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.img_tintuc1 img:hover{
+    transform: scale(1.1);
+}
+.tintuc_col2  img{
+    width: 385px;
+    height: 220px;
+}
+.img_tintuc2{
+    width: 385px;
+    height: 220px;
+    overflow: hidden; 
+    
+
+}
+.img_tintuc2 img{
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.img_tintuc2 img:hover{
+    transform: scale(1.1);
+}
+.tintuc_col3  img{
+    width: 385px;
+    height: 220px;
+}
+.img_tintuc3{
+    width: 385px;
+    height: 220px;
+    overflow: hidden;
+    
+}
+.img_tintuc3 img{
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.img_tintuc3 img:hover{
+    transform: scale(1.1);
+}
+/* Phần tựa đề tin tức */
+.tintuc_row a{
+    text-decoration: none;
+}
+.topic_tintuc1 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color : black;
+}
+.topic_tintuc2 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color : black;
+}
+.topic_tintuc3 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color : black;
+}
+/* Phần nội dung tin tức */
+.content_tintuc1 p{
+    line-height: 27px;
+    width: 385px;
+    font-weight:500;
+    color: #747474;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_tintuc2 p{
+    line-height: 27px;
+    width: 385px;
+    font-weight:500;
+    color: #747474;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_tintuc3 p{
+    line-height: 27px;
+    width: 385px;
+    font-weight:500;
+    color: #747474;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Tin Tức Row 2 */
+.tintuc_row2{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.tintuc_col1  img{
+    width: 385px;
+    height: 220px;
+}
+.img_tintuc1{
+    width: 385px;
+    height: 220px;
+    overflow: hidden; 
+    
+}
+.img_tintuc1 img{
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.img_tintuc1 img:hover{
+    transform: scale(1.1);
+}
+.tintuc_col2  img{
+    width: 385px;
+    height: 220px;
+}
+.img_tintuc2{
+    width: 385px;
+    height: 220px;
+    overflow: hidden; 
+    
+
+}
+.img_tintuc2 img{
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.img_tintuc2 img:hover{
+    transform: scale(1.1);
+}
+.tintuc_col3  img{
+    width: 385px;
+    height: 220px;
+}
+.img_tintuc3{
+    width: 385px;
+    height: 220px;
+    overflow: hidden;
+    
+}
+.img_tintuc3 img{
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.img_tintuc3 img:hover{
+    transform: scale(1.1);
+}
+/* Phần tựa đề tin tức */
+.tintuc_row a{
+    text-decoration: none;
+}
+.topic_tintuc1 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color : black;
+}
+.topic_tintuc2 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color : black;
+}
+.topic_tintuc3 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color : black;
+}
+/* Phần nội dung tin tức */
+.tintuc_row2 a{
+    text-decoration: none;
+}
+.content_tintuc1 p{
+    line-height: 27px;
+    width: 385px;
+    font-weight:500;
+    color: #747474;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_tintuc2 p{
+    line-height: 27px;
+    width: 385px;
+    font-weight:500;
+    color: #747474;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_tintuc3 p{
+    line-height: 27px;
+    width: 385px;
+    font-weight:500;
+    color: #747474;
+    font-family: Arial, Helvetica, sans-serif;
+}
