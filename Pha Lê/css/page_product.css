@@ -51,6 +51,7 @@
     text-decoration: none;
     color: var(--text-color);
     transition: color 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .list_sp a:hover {
@@ -70,6 +71,10 @@
 
 .list_sp a:hover::after {
     width: 100%; /* Khi hover, border mở rộng toàn bộ chiều rộng chữ */
+    
+}
+.list_sp a:hover {
+    transform: scale(1.2);
 }
 
 .stick {
