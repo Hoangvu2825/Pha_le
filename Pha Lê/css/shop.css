@@ -31,27 +31,69 @@
 .main_address_map{
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
-    gap: 80px;
+    gap: 50;
     position: relative;
 }
 
 .address{
     background-color: black;
     width: 410px;
-    height: 444px;
-    position: absolute; /* Cố định vị trí */
+    height: 400px;
+    position: absolute; 
     color: white;
+    top: 20px;
+    left: 100px;
     padding: 20px;
     box-sizing: border-box; /* Bao gồm padding trong chiều rộng/chiều cao */
     overflow-y: scroll; /* Kích hoạt cuộn dọc */
 }
 
+.header_address{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.dropdown_address{
+    width: 300px;
+    margin: 20px;
+}
+
+.dropdown_address input[type="checkbox"] {
+    display: none;
+}
+
+.dropdown_address label {
+    display: block;
+    font-size: 18px;
+    padding: 10px 10px 5px 0;
+    border-bottom: 1px solid var(--white-color);
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown_address .content_address {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.dropdown_address input[type="checkbox"]:checked ~ .content_address {
+    max-height: 300px; /* Điều chỉnh giá trị này dựa theo nội dung */
+}
+.content_address hr{
+    width: 60%;
+}
+.content_address p:hover{
+    color: var(--dark-green);
+}
+
+
+
 .map{
+    margin: 20px 0 0 500px;
     background-color: black;
     width: 850px;
-    height: 200px;
+    height: 400px;
+    overflow: hidden;
 }
 
