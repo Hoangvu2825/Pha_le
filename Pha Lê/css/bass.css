@@ -6,7 +6,7 @@
     --black-color:#0000;
 }
 *{
-    box-sizing: inherit;
+    box-sizing: inherit; 
 }
 html{
     box-sizing: border-box;
@@ -23,7 +23,4 @@ body{
     max-width: 100%;
     margin: 0 auto;
 }
-.nd_nav{
-    display: flex;
-    justify-content: center;
-}
+
