@@ -1,5 +1,4 @@
 .big {
-    height: 50000px;
     margin: 0;
 }
 
@@ -160,14 +159,17 @@
 }
 
 .row_spnb .spnb {
-    width: 380px;
-    height: 500px;
+    width: 340px;
+    height: 460px;
     padding: 35px;
+    border-radius: 10px;
+    background-color:var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease; /* Thêm transition cho transform */
 }
 
 .row_spnb .spnb:hover {
-    border-radius: 26px;
-    border: 2px solid lightgray;
+    background-color:var(--dark-green);
+    transform: scale(1.1);
 }
 
 .row_spnb .spnb a img {
@@ -183,13 +185,13 @@
 }
 
 .row_spnb .spnb img {
-    width: 310px;
-    height: 260px;
+    width: 270px;
+    height: 220px;
 }
 
 .row_spnb .spnb .spnbimg {
-    width: 310px;
-    height: 260px;
+    width: 270px;
+    height: 220px;
     overflow: hidden;
     border-radius: 26px;
 }
@@ -201,7 +203,7 @@
 .row_spnb .spnb .namespnb {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: black;
+    color: white;
     font-weight: 500;
     max-width: 340px;
 }
@@ -209,15 +211,23 @@
 .row_spnb .spnb .price {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: #CA8D72;
+    color: white;
     font-weight: bold;
 }
 
 .row_spnb .spnb .infospnb {
-    padding: 15px 40px;
-    border-radius: 26px;
-    background-color: #DDC3AF;
-    color: white;
+    color: var(--white-color);
+    width: 150px;
+    /* background-color: var(--white-color); */
+    height: 50px;
+    padding: 15px 30px;
+    border-radius: 10%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Thêm transition cho transform */
+}
+.row_spnb .spnb .infospnb:hover{
+    background-color:var(--button-color);
 }
 
 
@@ -477,12 +487,13 @@
     }
     .footer_row{
         display: grid;
-        grid-template-columns: 20% 20% 30% 20%;
+        grid-template-columns: 10% 20% 30% 20%;
         justify-content: space-evenly;
     }
     .footer_row p{
         color: white;
     }
+ 
     .footer_content1{
         margin: 0 auto;
         line-height: 20px;
@@ -496,7 +507,7 @@
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
-        
+
     }
     .footer_content2{
         line-height: 20px;
@@ -524,12 +535,32 @@
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
+
     }
-    .footer_content3 .content3 .searchemail{
-        height: 50px;
-        width: 250px;
+    .content3 .thanhsearch{
+        position: relative; /* Để nút Gửi có thể căn chỉnh tương đối với container */
+        width: 250px; /* Cùng kích thước với input */
+        border: 1px solid white;
         border-radius: 26px;
-        border: 2px solid black ;
+    }
+    .footer_content3 .content3 .thanhsearch .searchemail {
+        height: 50px;
+        width: 100%; /* Đảm bảo kích thước của email input chiếm toàn bộ container */
+        border-radius: 26px;
+        border: 2px solid black;
+        padding-right: 90px; /* Để tạo khoảng trống cho nút gửi */
+        border: 1px solid white ;
+
+    }
+    .footer_content3 .content3 .thanhsearch .nutgui {
+        position: absolute;
+        right: 0; /* Căn về phía phải của container */
+        top: 0; /* Căn trên cùng */
+        height: 50px;
+        width: 80px;
+        border-radius: 0px 26px 26px 0px;
+        background-color: black;
+        color: var(--white-color);
     }
     .footer_content3 .content3 input::placeholder{
         color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
