@@ -5,12 +5,16 @@
 }.page .nau{
     color: #BE7352;
 }
+.page a{
+    text-decoration: none;
+}
+
 /* TINTUC ROW 1 */
 /* Phần hình ảnh */
 .tintuc_row{
     display: grid;
     grid-template-columns: 25% 25% 25%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .tintuc_col1  img{
     width: 385px;
@@ -112,7 +116,7 @@
 .tintuc_row2{
     display: grid;
     grid-template-columns: 25% 25% 25%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 50px;
 }
 .tintuc_col1  img{
@@ -213,4 +217,138 @@
     font-weight:500;
     color: #747474;
     font-family: Arial, Helvetica, sans-serif;
+}
+/* SẢN PHẨM NỔI BẬT */
+.spnb_row{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+/* SAN PHAM 1 */
+.spnb_col1{
+    height: 470px;
+    width:300px ;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease; /* Thêm transition cho transform */
+}
+/* Phan hinh anh */
+.spnb_img1 img{
+    height: 310px;
+    width: 260px;
+}
+/* Phan ten san pham */
+.spnb_topic1 {
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Phan gia tien */
+.spnb_cost1{
+    color: var(--white-color);
+    font-weight: bold;
+}
+/* SAN PHAM 2 */
+.spnb_col2{
+    height: 470px;
+    width:300px ;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease; /* Thêm transition cho transform */
+}
+/* Phan hinh anh */
+.spnb_img2 img{
+    height: 310px;
+    width: 260px;
+}
+/* Phan ten san pham */
+.spnb_topic2 {
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Phan gia tien */
+.spnb_cost2{
+    color: var(--white-color);
+    font-weight: bold;
+}
+/* SAN PHAM 3 */
+.spnb_col3{
+    height: 470px;
+    width:300px ;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease; /* Thêm transition cho transform */
+}
+/* Phan hinh anh */
+.spnb_img3 img{
+    height: 310px;
+    width: 260px;
+}
+/* Phan ten san pham */
+.spnb_topic3 {
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Phan gia tien */
+.spnb_cost3{
+    color: var(--white-color);
+    font-weight: bold;
+}
+/* SAN PHAM 4 */
+.spnb_col4{
+    height: 470px;
+    width:300px ;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease; /* Thêm transition cho transform */
+}
+/* Phan hinh anh */
+.spnb_img4 img{
+    height: 310px;
+    width: 260px;
+}
+/* Phan ten san pham */
+.spnb_topic4 {
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Phan gia tien */
+.spnb_cost4{
+    color: var(--white-color);
+    font-weight: bold;
+}
+/* ANIMATION */
+.spnb_col1:hover, .spnb_col2:hover, .spnb_col3:hover, .spnb_col4:hover{
+    background-color:var(--dark-green);
+    transform: scale(1.1);
+}
+/* cai nut */
+.button_buy{
+    margin-top: 10px;
+}
+.button_buy a{
+    color: var(--white-color);
+    width: 125px;
+    /* background-color: var(--white-color); */
+    height: 40px;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Thêm transition cho transform */
+}
+.button_buy a:hover{
+    background-color: var(--button-color);
 }

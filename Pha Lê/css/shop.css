@@ -27,7 +27,7 @@
 .lop_phu_banner:hover{ 
     opacity: 40%;
 }
-
+    /*phần map*/
 .main_address_map{
     display: grid;
     grid-template-columns: auto auto;
@@ -38,7 +38,7 @@
 .address{
     background-color: black;
     width: 410px;
-    height: 400px;
+    height: 500px;
     position: absolute; 
     color: white;
     top: 20px;
@@ -78,22 +78,95 @@
 }
 
 .dropdown_address input[type="checkbox"]:checked ~ .content_address {
-    max-height: 300px; /* Điều chỉnh giá trị này dựa theo nội dung */
+    max-height: 600px; /* Điều chỉnh giá trị này dựa theo nội dung */
 }
 .content_address hr{
     width: 60%;
+    height: 2px;
+    border: 2px solid var(--dark-green);
 }
 .content_address p:hover{
     color: var(--dark-green);
 }
 
-
-
 .map{
     margin: 20px 0 0 500px;
     background-color: black;
     width: 850px;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
+/*hết*/
 
+/**/
+.information_shop{
+    margin: 100px 0;
+}
+.informatin_shop_TPHCM-col1,.informatin_shop_TPHCM-col2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    justify-content: center;
+    gap: 10%;
+}
+.information_shop_Da_Nang{
+    margin: 50px 0;
+}
+.information_shop_Ha_Noi{
+    margin: 50px 0;
+}
+.informatin_shop_TPHCM-col2{
+    margin-top: 5px;
+}
+.TPHCM_col-1{
+    width: 600px;
+}
+.District{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    font-weight: bold;
+}
+.line{
+    width: 10%;
+    border: 2px solid var(--button-color);
+}
+
+.content_information-TPHCM{
+    display: flex;
+}
+
+.img_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 5px 0 0;
+}
+.img_icon img{
+    padding: 5px;
+}
+.content_information-TPHCM a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s ease
+}
+.content_information-TPHCM a:hover{
+    color: var(--button-color);
+}
+.noidung_2 a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s ease
+}
+.noidung_2 a:hover{
+    color: var(--button-color);
+}
+.hotline{
+    padding-left: 35px;
+    font-size: 15px;
+}
