@@ -219,6 +219,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* SẢN PHẨM NỔI BẬT */
+.spnb_layout{
+    margin-bottom: 70px;
+}
 .spnb_row{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
