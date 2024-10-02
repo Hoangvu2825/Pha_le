@@ -15,7 +15,11 @@
 .img_product img {
     padding: 10px 10px 10px 0;
 }
-
+.img_product a{
+    text-decoration: none;
+    color: #BE7352;
+    font-weight: 500;
+}
 .information_product {
     padding: 0 50px;
 }
