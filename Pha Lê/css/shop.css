@@ -50,43 +50,19 @@
 
 .header_address{
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
 }
-.dropdown_address{
-    width: 300px;
-    margin: 20px;
+.store_1{
+    cursor: pointer;
+    user-select: none; /* bấm vào ko còn nháy chữ */
 }
-
-.dropdown_address input[type="checkbox"] {
+.content_store{
     display: none;
 }
-
-.dropdown_address label {
-    display: block;
-    font-size: 18px;
-    padding: 10px 10px 5px 0;
-    border-bottom: 1px solid var(--white-color);
-    color: white;
-    cursor: pointer;
-}
-
-.dropdown_address .content_address {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.dropdown_address input[type="checkbox"]:checked ~ .content_address {
-    max-height: 600px; /* Điều chỉnh giá trị này dựa theo nội dung */
-}
-.content_address hr{
-    width: 60%;
-    height: 2px;
-    border: 2px solid var(--dark-green);
-}
-.content_address p:hover{
-    color: var(--dark-green);
+.content_store-1{
+    font-size: 15px;
+    padding-left: 10px;
 }
 
 .map{
@@ -95,6 +71,12 @@
     width: 850px;
     height: 500px;
     overflow: hidden;
+}
+.map_TPHCM-1 iframe{
+    display: none;
+}
+.clone{
+    display: block;
 }
 /*hết*/
 

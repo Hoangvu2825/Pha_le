@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/bass.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js_jquery/jquery-3.7.1.min.js"></script>
+    <script src="../js_jquery/store_search.js"></script>
     <title>Cửa Hàng</title>
 </head>
 
@@ -68,35 +71,38 @@
                     <div class="address">
                         <h2 class="header_address">Tìm Kiếm Cửa Hàng</h2>
                         <div class="dropdown_address">
-                            <input type="checkbox" id="dropdown1">
-                            <label for="dropdown1">Chi nhánh Thành Phố Hồ Chí Minh</label>
-                            <div class="content_address">
-                                <p>
-                                    193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP. Hồ Chí Minh, Việt Nam
+                            <h3 class="store_1">Chi nhánh Thành Phố Hồ Chí Minh</h3>
+                            <div class="content_store">
+                                <p class="content_store-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;"> 193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình,<br> TP. Hồ Chí Minh</span>
+                                    <br>
+                                    Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">206 Chiến Lược, Bình Trị Đông, Bình Tân,<br>TP. Hồ Chí Minh</span>
                                     <br> Số điện thoại: 1900 3013
                                 </p>
                                 <hr>
-                                <p>
-                                    206 Chiến Lược, Bình Trị Đông, Bình Tân, Hồ Chí Minh, Việt Nam
+                                <p class="content_store-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">77 Thiên Phước, Phường 15, Quận 11,<br> TP. Hồ Chí Minh</span>
                                     <br> Số điện thoại: 1900 3013
                                 </p>
                                 <hr>
-                                <p>
-                                    77 Thiên Phước, Phường 15, Quận 11, TP. Hồ Chí Minh, Việt Nam
-                                    <br> Số điện thoại: 1900 3013
-                                </p>
-                                <hr>
-                                <p>
-                                    Chung Cư, Huỳnh Văn Chính, Phú Trung, Tân Phú, Hồ Chí Minh, Việt Nam
+                                <p class="content_store-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">Huỳnh Văn Chính, Phú Trung, Tân Phú,<br>TP. Hồ Chí Minh</span>
                                     <br> Số điện thoại: 1900 3013
                                 </p>
                             </div>
                         </div>
-
+                        <hr>
                         <div class="dropdown_address">
-                            <input type="checkbox" id="dropdown2">
-                            <label for="dropdown2">Chi nhánh Đà Nẵng</label>
-                            <div class="content_address">
+                            <h3 class="store_1">Chi nhánh Đà Nẵng</h3>
+                            <div class="content_store">
                                 <p>
                                     313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng , Việt Nam
                                     <br> Số điện thoại: 1900 3013
@@ -111,15 +117,12 @@
                                     59 Văn Cận, Khuê Trung, Cẩm Lệ, Đà Nẵng , Việt Nam
                                     <br> Số điện thoại: 1900 3013
                                 </p>
-                                <hr>
-
                             </div>
                         </div>
-
+                        <hr>
                         <div class="dropdown_address">
-                            <input type="checkbox" id="dropdown3">
-                            <label for="dropdown3">Chi nhánh Hà Nội</label>
-                            <div class="content_address">
+                            <h3 class="store_1">Chi nhánh Hà Nội</h3>
+                            <div class="content_store">
                                 <p>
                                     15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội, Việt Nam
                                     <br> Số điện thoại: 1900 3013
@@ -131,11 +134,10 @@
                                 </p>
                             </div>
                         </div>
-
+                        <hr>
                         <div class="dropdown_address">
-                            <input type="checkbox" id="dropdown4">
-                            <label for="dropdown4">Chi nhánh Lâm Đồng</label>
-                            <div class="content_address">
+                            <h3 class="store_1">Chi nhánh Lâm Đồng</h3>
+                            <div class="content_store">
                                 <p>
                                     Nam Ban, Lâm Hà, Lâm Đồng, Việt Nam
                                     <br> Số điện thoại: 1900 3013
@@ -143,13 +145,29 @@
                                 </p>
                             </div>
                         </div>
+                      
                     </div>
-                    <div class="map">
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105037.1068955327!2d108.31754251816032!3d11.942284812061404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31716a1b549df0f1%3A0x3d1b7765d02415d7!2sPha%20L%C3%AA%20Hj!5e0!3m2!1svi!2sus!4v1727427091893!5m2!1svi!2sus"
-                            width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72976.90332770265!2d108.19786691683629!3d15.993929306498286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219ec37a4d7e7%3A0x15cc34058831b461!2zUGhhIEzDqg!5e0!3m2!1svi!2sus!4v1727427280629!5m2!1svi!2sus"
-                            width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map">
+                        <div class="map_TPHCM-1">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5003514636173!2d106.65027107570327!3d10.772937659256751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f80706b0ceb%3A0x623d282591245ff2!2sPha%20l%C3%AA%20S%C3%A0i%20G%C3%B2n%20-%20Phalesaigon.com.vn!5e0!3m2!1svi!2s!4v1728475563854!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_TPHCM-1">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6431933985095!2d106.61105797570316!3d10.761957859459082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752da12ee6c177%3A0x28a4463599679994!2zcGhhIGzDqg!5e0!3m2!1svi!2s!4v1728475702499!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_TPHCM-1">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.46787003554!2d106.65082587570332!3d10.775432859210724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f34114e83f7%3A0xe94729188e5ed4d2!2zQ8OgIHBow6ogUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728475902314!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_TPHCM-1">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7838.8213856835355!2d106.63888312014973!3d10.77982378352904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ebaa88f8cbb%3A0xf43b43dbb985cc6f!2zQ2Fmw6kgUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728476015085!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        
+                        
+
 
                     </div>
                 </div>
