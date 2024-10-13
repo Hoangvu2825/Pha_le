@@ -63,6 +63,7 @@
 .content_store-1{
     font-size: 15px;
     padding-left: 10px;
+    cursor: default; /* Không hiện con trỏ text */
 }
 
 .map{
@@ -72,11 +73,8 @@
     height: 500px;
     overflow: hidden;
 }
-.map_TPHCM-1 iframe{
+.map_TPHCM-1,.map_DANANG-1,.map_HANOI-1,.map_LAMDONG-1{
     display: none;
-}
-.clone{
-    display: block;
 }
 /*hết*/
 
