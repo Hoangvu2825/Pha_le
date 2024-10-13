@@ -56,6 +56,7 @@
 .store_1{
     cursor: pointer;
     user-select: none; /* bấm vào ko còn nháy chữ */
+    color: var(--white-color);
 }
 .content_store{
     display: none;

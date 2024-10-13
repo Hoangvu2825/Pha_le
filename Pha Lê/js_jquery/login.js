@@ -1,5 +1,4 @@
 $(function(){
-
     $("#lop_phu_login").hide(); // ẩn form 
 
     
@@ -14,5 +13,9 @@ $(function(){
         }
     });
     
+    $(".nut_login").click(function(){
+        $("#lop_phu_login").fadeOut(); // ẩn form 
+        
+    })
 });
 
