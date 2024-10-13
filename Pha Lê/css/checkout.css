@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.order-father{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    
+    height: 500px;
+}
+.order-child-left{
+    /* background-color: aqua; */
+}
+.order-child-right{
+    background-color: beige;
+}
+
+.or-child-left-header{
+    display: flex;
+    justify-content:space-between;
+
+}
+.or-child-left-header-1,
+.or-child-left-header-2{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.or-child-left-header-2 button{
+    background: none;
+    color: none;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}

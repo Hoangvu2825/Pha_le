@@ -73,6 +73,7 @@
 .btnlogin,.btn_shopping_cart{
     background-color:black ;
     border: none;
+    cursor: pointer;
 }
 
 /* carousel */
