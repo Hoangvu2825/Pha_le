@@ -6,7 +6,7 @@
 .box {
     display: flex;
     align-items: center;
-    height: 92px;
+    height: 72px;
     background-color: black;
     position: fixed;
     /* Khóa navbar ở đầu */
@@ -18,7 +18,9 @@
     z-index: 1000;
     /* Đảm bảo navbar nổi lên trên các phần tử khác */
 }
-
+.box.sticky {
+    height: 94px; /* Chiều dài khi cuộn xuống */
+}
 .logo {
     display: flex;
     align-items: center;
@@ -79,23 +81,55 @@
 /* carousel */
 
 .carousel {
-    display: flex;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height:100%; /*lấy giá trị full theo chiều dọc*/
+    overflow: hidden; 
+    position: relative;
+    
 }
 
 .slide-show {
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
 .list-images {
     width: 100%;
-    height: 600px;
+    height: 100%;
+    display: flex;
+}
+.list-images img {
+    width: 100%; 
+    height: 840px; 
+    
 }
 
-
+.lop_phu_carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 20;
+    color: white;
+    transition: opacity 0.8s ease;
+}
+.lop_phu_carousel:hover{
+    opacity: 0.26;
+}
+ .bong{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    background-color: black;
+    opacity: 70%;
+    bottom: 0;
+    z-index: 10;
+  
+}
 /*hết*/
 
 /* form đăng ký */
