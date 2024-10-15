@@ -101,6 +101,7 @@
 /* form đăng ký */
 /* Lớp phủ đen toàn màn hình */
 #lop_phu_login {
+    display: none; /* Bắt đầu ẩn form */
     position: fixed;
     top: 0;
     left: 0;
