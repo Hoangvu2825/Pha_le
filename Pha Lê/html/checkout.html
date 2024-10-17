@@ -88,6 +88,7 @@
                         <div class="or-child-left-header">
                             <div class="or-child-left-header-1">
                                 <span>Giao Hàng</span>
+                                <hr style=" border: 2px solid #BE7352;">
                             </div>
                             <div class="or-child-left-header-2">
                                 <button >Đổi Phương Thức</button>
@@ -99,16 +100,97 @@
                                     <img src="../image/checkout/iconorder.png" width="40px" alt="">
                                 </div>
                                 <div class="under-body-content1-diachi">
-                                    <span>18/24/56 nguễn văn chinh p15 Q15</span>    
+                                    <span>18/24/56 nguyễn văn chinh p15 Q15</span>    
                                 </div>
                                 <div class="under-body-content1-icon">
-                                    <i class="fa-solid fa-chevron-right"></i>   
+                                    <i class="fa-solid fa-chevron-right" style="font-size: 25px;"></i>   
                                 </div>
                             </div>
+                            <hr style="width: 400px; opacity: 50%;">
+                            <div class="under-body-content2">
+                                <div class="under-body-content2-img" >
+                                    <div class="lop" style="background-color: white; width: 40px; height: 40px;"></div>
+                                </div>
+                                <div class="under-body-content2-diachi">
+                                    <span>Nhận hàng trong ngày </span><span>15-30 phút</span>
+                                    <br>
+                                    <span>Vào lúc:</span>    
+                                </div>
+                                <div class="under-body-content2-icon">
+                                    <i class="fa-solid fa-chevron-right" style="font-size: 25px;"></i>   
+                                </div>
+                            </div>
+                            <input type="text" class="txt_consignee" id="" placeholder="Tên người nhận">
+                            <input type="number" class="nb_consignee_phone" id="" placeholder="Số điện thoại">
+                            <input type="text" class="txt_instruct_consignee" id="" placeholder="Thêm hướng dẫn giao hàng">
+                        </div>
+                        <div class="or-child-left-header">
+                            <div class="or-child-left-header-1">
+                                <span>Phương thức thanh toán</span>
+                                <hr style=" border: 2px solid #BE7352;">
+                            </div>
+                        </div>
+                        <div class="phuongthuctt">
+                            <p class="phuongthuctt-item">
+                                <input type="radio" name="thanhtoan" id=""><img src="../image/checkout/tienmat.jpg" alt=""> Tiền mặt
+                            </p>
+
+                            <p class="phuongthuctt-item">
+                            <input type="radio" name="thanhtoan" id=""><img src="../image/checkout/momo.png" alt="">MO MO
+                            </p>
+
+                            <p class="phuongthuctt-item">
+                            <input type="radio" name="thanhtoan" id=""><img src="../image/checkout/zalo.png" alt="">ZaloPay
+                            </p>
+
+                            <p class="phuongthuctt-item">
+                            <input type="radio" name="thanhtoan" id=""><img src="../image/checkout/shoppy.png" alt="">ShoppyPay
+                            </p>
+
+                            <p class="phuongthuctt-item">
+                            <input type="radio" name="thanhtoan" id=""><img src="../image/checkout/thenganhang.png" alt="">Thẻ ngân hàng
+                            </p>
                         </div>
                     </div>
                     <div class="order-child-right">
+                        <div class="or-child-left-header">
+                            <div class="or-child-left-header-1">
+                                <span>Các món đã chọn</span>
+                                <hr style=" border: 2px solid #BE7352;">
+                            </div>
+                            <div class="or-child-left-header-2">
+                                <a href="../html/Page_Product.html"><button >Thêm món</button></a>
+                            </div>
+                        </div>
+                        <div class="product_display">
+                            <ul id="cart-items">458</ul>
+                            <div class="or-child-left-header">
+                                <div class="or-child-left-header-1">
+                                    <span>Tổng tiền</span>
+                                    <hr style=" border: 2px solid #BE7352;">
+                                </div>
+                            </div>
 
+                            <div class="thanhtien">
+                                <span>Thành tiền:</span>
+                                <p id="cart-total"> 0 đ</p>
+                            </div>
+                            <div class="phigiaohang">
+                                <span>Phí giao hàng:</span>
+                                <p> 18.000 đ</p>
+                            </div>
+                            <div class="freeship">
+                                <span>Bạn có mã Freeship trong mục Ưu đãi</span>
+                                <p> 0 đ</p>
+                            </div>
+                            <span style="padding: 20px 20px;">Khuyến mãi</span>
+
+                            <div class="tongtien">
+                                <p>Thành tiền:4550đ</p>
+                                <button class="dathang">Đặt hàng</button>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 

@@ -7,14 +7,17 @@ h1{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 5px;
-    
-    height: 500px;
+    margin-bottom: 50px ;
 }
 .order-child-left{
-    /* background-color: aqua; */
+    width: 520px;
 }
 .order-child-right{
-    background-color: beige;
+    width: 520px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
 }
 
 .or-child-left-header{
@@ -35,4 +38,87 @@ h1{
     padding: 10px;
     border-radius: 15px;
     border: 1px solid black;
+}
+.under-body-content1{
+    display: grid;
+    grid-template-columns: 15% 80% 5%;
+    margin-top: 5px;
+}
+
+.under-body-content2{
+    display: grid;
+    grid-template-columns: 15% 80% 5%;
+    margin-top: 10px;
+}
+
+/* người nận hàng */
+.txt_consignee{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.nb_consignee_phone{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+.txt_instruct_consignee{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.phuongthuctt{
+    margin-left: 30px;
+}
+
+.phuongthuctt img{
+    width: 24px;
+    margin: 0 10px 0 15px;
+}
+.phuongthuctt-item{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    border-bottom:1px solid rgb(217, 217, 217) ;
+    padding: 5px;
+    font-size: 12px;
+}
+
+input[type="radio"] {
+    transform: scale(1.8); /* Phóng to kích thước radio button */
+}
+
+
+
+
+
+
+.product_display{
+    width: 100%;
+    height: 500px;
+}
+
+.thanhtien{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20px;
+    border-bottom:1px solid rgb(207, 206, 206) ;
+}
+
+.phigiaohang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20px;
+}
+.freeship{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20px;
+    border-bottom:1px solid rgb(207, 206, 206) ;
+
 }
