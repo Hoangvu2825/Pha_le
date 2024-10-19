@@ -14,7 +14,8 @@
     <script src="../js_jquery/store_search.js"></script>
     <script src="../js_jquery/login.js"></script>
     <script src="../js_jquery/navbar.js"></script>
-    <title>Cửa Hàng</title>
+    <script src="../js_jquery/change_address.js"></script>
+    <title>Kiểm Tra Đơn Hàng</title>
 </head>
 
 <body>
@@ -35,6 +36,22 @@
                     <input type="number" placeholder="Nhập số điện thoại" class="nhap_phone">
                 </div>
                 <button class="nut_login">Đăng nhập</button>
+            </div>
+        </div>
+
+        <!-- đổi phương thức -->
+        <div id="lop_phu_address">
+            <div class="form_address">
+                <img src="../image/checkout/iconorder.png" alt="">
+                <div class="nhap_address">
+                    <input type="text" class="txt-address" id="" placeholder="Nhập địa chỉ"> 
+                    <p>
+                        <input type="button" value="Chọn địa chỉ này">
+                        <input type="button" value="Chọn địa chỉ này">
+                    </p>
+                    
+                </div>
+                
             </div>
         </div>
         <div class="header">
@@ -91,7 +108,7 @@
                                 <hr style=" border: 2px solid #BE7352;">
                             </div>
                             <div class="or-child-left-header-2">
-                                <button >Đổi Phương Thức</button>
+                                <button id="btn_doi-phuong-thuc" >Đổi Phương Thức</button>
                             </div>
                         </div>
                         <div class="or-child-left-header-under">
