@@ -87,60 +87,45 @@
 
 
 /* carousel */
-
-.carousel {
+.slide-show{
     width: 100%;
     height: 100%;
-    /*lấy giá trị full theo chiều dọc*/
+    
+}
+.list-images{
+    width: 100%;
+    height: 900px;
     overflow: hidden;
     position: relative;
 }
-
-.slide-show {
+.list-images img{
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
-
-.list-images {
+.btn-carousel{
     width: 100%;
-    height: 100%;
+    padding: 0 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.btn-carousel img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    transition:  scale(1.1) 0.5s ease;
 
-.list-images img {
-    width: 100%;
-    height: 900px;
 }
-
-.lop_phu_carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    opacity: 0.1;
-    z-index: 20;
-    color: white;
-    transition: opacity 0.8s ease;
-}
-
-.lop_phu_carousel:hover {
-    opacity: 0.26;
-}
-
-.bong {
-    width: 100%;
-    height: 65px;
-    position: absolute;
-    background-color: black;
-    opacity: 70%;
-    bottom: 0;
-    z-index: 10;
-}
-
-
+.btn-carousel img:hover{
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.5);
+    border-radius: 50%;
+  }
 /*hết*/
 
 
@@ -343,7 +328,7 @@ h3 {
 }
 
 .spnb_info .price {
-    margin-top: 50px;
+    margin-top: 30px;
     font-weight: bold;
 }
 
@@ -394,7 +379,7 @@ h3 {
     padding: 20px;
     width: 587px;
     height: 50px;
-    background-color: #668B37;
+    background-color: #85b349;
     border-radius: 30px;
     margin-left: 700px;
     margin-top: 40px;
@@ -402,6 +387,11 @@ h3 {
     color: black;
     font-size: 24px;
     font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.trynow a:hover{
+    background-color: #435a26;
+    color:white;
 }
 
 .ttnb_layout {

@@ -77,8 +77,8 @@
 
         <div class="main">
             <div class="grid">
-                <div class="product_body">
-                    <div class="product_menu">
+                <div class="product_body" >
+                    <div class="product_menu" >
                         <!-- Menu bên trái -->
                         <div class="danhsach">
                             <ul class="list_sp">
@@ -1213,7 +1213,7 @@
                                 </div>
                             </div>
                             <!-- FRENCH PRESS dòng 2 -->
-                            <div class="product_row_1">
+                            <div class="product_row_1" >
                                 <div class="product_col_1">
                                     <div class="product_img">
                                         <a href="../../Pha Lê/html/CT_Page/MANG PHA LÊ VỀ NHÀ/Phê Kenya - Túi 150gr.html"><img src="../image/Product_img/MANG PHA LÊ VỀ NHÀ/TÚI-PHÊ-KENYA.jpg" alt=""></a>
@@ -1234,15 +1234,15 @@
                                         <p class="product_information_button"><a href="../../Pha Lê/html/CT_Page/MANG PHA LÊ VỀ NHÀ/Phê Phin - Túi 200gr.html">Mua ngay</a></p>
                                     </div>
                                 </div>
-                                <div class="product_col_3">
+                                <div class="product_col_3" >
                                     <div class="product_img">
                                         <a href="../../Pha Lê/html/CT_Page/MANG PHA LÊ VỀ NHÀ/Phê Phin Truffle - Túi 200gr.html"><img src="../image/Product_img/MANG PHA LÊ VỀ NHÀ/PHÊ-PHIN-TRUFFLE-TÚI.jpg" alt=""></a>
                                     </div>
-                                    <div class="product_information">
+                                    <div class="product_information" >
                                         <p class="product_information_content">Phê Phin Truffle - Túi 200gr</p>
                                         <p class="product_information_money">290.000 đ</p>
                                         <p class="product_information_button"><a href="../../Pha Lê/html/CT_Page/MANG PHA LÊ VỀ NHÀ/Phê Phin Truffle - Túi 200gr.html">Mua ngay</a></p>
-                                    </div>
+                                    </div >
                                 </div>
                             </div>
                         </div>
@@ -1251,7 +1251,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="cuoi">
             <div class="footer_layout">
                 <div class="grid">
                     <div class="footer_row">
@@ -1312,6 +1312,25 @@
         </div>
 
     </div>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                // Khoảng cách từ đầu trang đến cuối màn hình + chiều cao màn hình
+                var scrollPosition = $(window).scrollTop() + $(window).height();
+                
+                // Vị trí từ đầu trang đến id cuối
+                var footerPosition = $('#cuoi').offset().top;
+
+                // Nếu vị trí cuộn gần đến footer
+                if (scrollPosition >= footerPosition - 5) { // Điều chỉnh khoảng cách ở đây
+                    $('.product_menu').fadeOut(1); // Ẩn đối tượng
+                } else {
+                    $('.product_menu').fadeIn(); // Hiện lại đối tượng khi cuộn lên
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
