@@ -3,7 +3,7 @@ $(function(){
 
     
     $("#btnlogin").click(function() {
-        $("#lop_phu_login").fadeToggle(); // Hiển thị form 
+        $("#lop_phu_login").fadeIn(); // Hiển thị form 
         $('body').addClass('lock-scroll');  // Thêm class để khóa cuộn
     });
 
