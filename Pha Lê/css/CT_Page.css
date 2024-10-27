@@ -94,10 +94,6 @@
 }
 
 
-/* .sp-header h4{
-    text-align: center;
-} */
-
 .hd1-button {
     margin: 0 10px;
 }
@@ -210,7 +206,7 @@
 
 .topping p {
     text-align: left;
-    background-color: rgb(210, 204, 204);
+    background-color: var(--dark-green);
     padding: 2px 1px;
     margin: 10px 0;
 }
@@ -227,4 +223,115 @@
 
 input[type="radio"] {
     transform: scale(1.8);
+}
+.nut_giohang{
+    width: 100%;
+    margin: 5px 0;
+    background: none;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nut_giohang{
+    width: 100%;
+    margin: 5px 0;
+    background: none;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nut_giohang{
+    width: 100%;
+    margin: 5px 0;
+    background: none;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nut_giohang{
+    width: 100%;
+    margin: 5px 0;
+    background: none;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nut_giohang{
+    width: 100%;
+    margin: 5px 0;
+    background: none;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nut_giohang{
+    width: 100%;
+    margin: 5px 0;
+    background: none;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+.nut_giohang:hover{
+    color: white;
+   background-color: var(--dark-green);
+}
+/* thông báo */
+
+.notification {
+    position: fixed;
+    top: 10%;
+     right: -400px;/* Đặt ngoài màn hình */
+    width: 400px;
+    height: 100px;
+    padding: 10px 20px;
+    color:var(--dark-green);
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: right 0.5s ease-in-out;
+    z-index: 100;
+}
+.icon img{
+    width: 50px;
+    margin-right: 5px;
+}
+.notification .icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.notification.hidden {
+    right: -400px; /* Ẩn ngoài màn hình */
+} 
+
+.notification.show {
+    right: 20px; /* Hiện trên màn hình */
 }
