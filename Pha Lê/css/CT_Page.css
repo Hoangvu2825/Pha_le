@@ -289,15 +289,11 @@ input[type="radio"] {
     margin: 5px 0;
     background: none;
     padding: 10px;
-    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.5s ease;
-}
-.nut_giohang:hover{
     color: white;
    background-color: var(--dark-green);
 }
@@ -327,7 +323,9 @@ input[type="radio"] {
     font-size: 25px;
     margin-right: 10px;
 }
-
+.message{
+    font-weight: bold;
+}
 .notification.hidden {
     right: -400px; /* Ẩn ngoài màn hình */
 } 
